@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <style>
+    
+            title {text-align: center;}
+            h1 {text-align: center;}
+            div {text-align: center;}
+            </style>
+        <link rel="stylesheet" type="text/css" href="assignment-02.css">
+         
+    
+    </head>
+<body onload="pageLoad()">
+    <h1 class="heading " id = "head">Simon Says
+    </h1>
+  
+    <h2 id = "head2"> You Took Too Long
+    </h2>
+
+    <table>
+            <div class="container ">
+                <div class="blackCircle top-left black ">
+                    <div onClick = "circleClicked(event.currentTarget)"  class="circle top-left-circle "  id = "green"></div>
+                </div>
+                <div class="blackCircle top-right black">
+                    <div onClick = "circleClicked(event.currentTarget)" class="circle top-right-circle " id = "red"></div>
+                </div>
+                <div class="blackCircle bottom-left black">
+                    <div onClick = "circleClicked(event.currentTarget)" class="circle bottom-left-circle" id = "yellow"></div>
+                </div>
+                <div class="blackCircle bottom-right black">
+                    <div onClick = "circleClicked(event.currentTarget)" class="circle bottom-right-circle" id = "blue" ></div>
+                </div>
+                
+                    <div class = "container">
+                        <div class=" center rectangle1 ">
+                            <div class=" displayLevel levelText" id = "levelBox">00</div>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <div class="center start ">
+                            <div><button  class=" button2 levelText" onclick= "startGame()" id = "startButton"><h2>START</h2></button></div>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <div class="center rectangle2 ">
+                            <div class=" displayLevel levelText" id = "scoreBox">00</div>
+                    </div>
+                </div>
+                <div class = "container">
+                    <div class=" center dotty ">
+                        <div class=" dot" id = "goCircle"></div>
+                    </div>
+                </div>
+                <div class="middle">    
+            </div>
+            <div class="alert warning" id = "warnMessage">
+                <span class="closebtn">&times;</span>  
+                <strong>Warning!</strong> This game shows a series of flashing lights.<br> <br> Some people can have a seizure when they see certain visual images, like flashing lights or patterns in video games.<br><br> Even if they never had a seizure before, they might have a condition called "photosensitive epileptic seizures" that can cause them while playing video games.<br><br> If you experience any symptoms while playing, stop playing and see a doctor right away. <br><br> Press the x button to continue
+              </div>
+        </div>
+    </table>
+   
+    <script type="text/javascript" src="assignment-02.js"></script> 
+</body>
+</html>
